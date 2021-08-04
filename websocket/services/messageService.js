@@ -148,7 +148,7 @@ async function getChatMessages(roomName) {
   })
 
   const messages = [...messagesWithReplies, ...messagesWithoutReplies]
-    .sort((a, b) => (a.reply?.createdAt > b.createdAt ? -1 : 1))
+    .sort((a, b) => (a.reply.createdAt > b.createdAt ? -1 : 1))
     .reverse()
 
   return messages
