@@ -12,6 +12,8 @@ async function initialize() {
   const user = process.env['USER']
   const password = process.env['PASSWORD']
   const database = process.env['DATABASE']
+
+  console.log(host, port, user, password, database)
   const connection = await mysql.createConnection({
     host,
     port,
