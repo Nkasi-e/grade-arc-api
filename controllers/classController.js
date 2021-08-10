@@ -1,6 +1,6 @@
 const Joi = require('joi')
 const validateRequest = require('../_middleware/validate-request')
-const classService = require('../services/ClassService')
+const classService = require('../services/classService')
 
 exports.createSchema = (req, res, next) => {
   const schema = Joi.object({
