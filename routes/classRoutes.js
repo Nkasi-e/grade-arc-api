@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const ClassController = require('../controllers/ClassController')
+const classController = require('../controllers/classController')
 const authorize = require('../_middleware/authorize')
 const Role = require('../_middleware/role')
 
@@ -13,7 +13,7 @@ const {
   createClass,
   updateSchema,
   _deleteClass,
-} = ClassController
+} = classController
 
 // Routes
 router.post(
