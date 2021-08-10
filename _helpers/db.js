@@ -8,7 +8,7 @@ initialize()
 async function initialize() {
   // create db if it doesn't already exist
   const host = process.env['HOST']
-  const port = process.env['PORT']
+  const port = process.env['MYSQL_PORT']
   const user = process.env['USER']
   const password = process.env['PASSWORD']
   const database = process.env['DATABASE']
