@@ -4,6 +4,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const errorHandler = require('_middleware/error-handler')
+require('dotenv').config({path: __dirname + '/.env'})
 
 const server = http.createServer(app)
 
