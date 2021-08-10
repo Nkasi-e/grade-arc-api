@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const NoteController = require('../controllers/NoteController')
+const noteController = require('../controllers/noteController')
 const authorize = require('../_middleware/authorize')
 const Role = require('../_middleware/role')
 const {
@@ -16,7 +16,7 @@ const {
   createNoteSchema,
   saveNoteSchema,
   createFolder,
-} = NoteController
+} = noteController
 
 router.post(
   '/note/create_folder',
